@@ -66,7 +66,7 @@ class DatabaseConnectionCountCheck extends Check
         return config('database.default');
     }
 
-    protected function getConnectionCount(): int
+    public function getConnectionCount(): int
     {
         $connectionName = $this->connectionName ?? $this->getDefaultConnectionName();
 
